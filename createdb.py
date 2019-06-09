@@ -18,4 +18,5 @@ mydb = mysql.connector.connect(
   database='fingerdb'
 )
 mycursor = mydb.cursor()
-mycursor.execute("CREATE TABLE sellers (userid VARCHAR(255), password VARCHAR(255))")
+mycursor.execute("CREATE TABLE sellers (userid VARCHAR(255), password VARCHAR(255), bankdet VARCHAR(255))")
+mycursor.execute("CREATE TABLE buyers (userid VARCHAR(255), password VARCHAR(255), finger VARCHAR(255), bankdet VARCHAR(255))")
